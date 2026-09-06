@@ -49,29 +49,34 @@ LUFFY/
 
 ### 🔴 High Priority TODOs
 
-- **API Integration**: OpenAI and Gemini API implementations need completion
+- **API Integration**: ✅ OpenAI API implementation COMPLETED! Only 3 minor items remaining. Gemini API still needs full integration
 - **Reward System**: Parallel processing and validation for reward computation  
 - **FSDP Training**: Model loading and distributed training setup
 - **Data Processing**: Batch dimension operations and tensor reshaping
 
 ### 📝 Complete TODO List
 
-- [ ] **luffy/deepscaler/utils.py:45** - Implement OpenAI API client initialization
-- [ ] **luffy/deepscaler/utils.py:46** - Add proper authentication handling
-- [ ] **luffy/deepscaler/utils.py:47** - Implement exponential backoff retry logic for rate limits
-- [ ] **luffy/deepscaler/utils.py:48** - Add comprehensive error handling for different API errors
-- [ ] **luffy/deepscaler/utils.py:49** - Implement response parsing and validation
-- [ ] **luffy/deepscaler/utils.py:50** - Add logging for API calls and errors
-- [ ] **luffy/deepscaler/utils.py:51** - Support batch processing for multiple prompts
-- [ ] **luffy/deepscaler/utils.py:52** - Add timeout configuration for API calls
-- [ ] **luffy/deepscaler/utils.py:88** - Implement Vertex AI initialization and authentication
-- [ ] **luffy/deepscaler/utils.py:89** - Configure safety settings for content generation
-- [ ] **luffy/deepscaler/utils.py:90** - Set up GenerativeModel with proper system instructions
-- [ ] **luffy/deepscaler/utils.py:91** - Implement retry logic with exponential backoff
-- [ ] **luffy/deepscaler/utils.py:92** - Add comprehensive error handling for API access issues
-- [ ] **luffy/deepscaler/utils.py:93** - Handle rate limiting and quota management
-- [ ] **luffy/deepscaler/utils.py:94** - Implement response validation and text extraction
-- [ ] **luffy/deepscaler/utils.py:95** - Add support for different generation configurations
+#### ✅ COMPLETED OpenAI API Items (already implemented):
+- [x] **luffy/deepscaler/utils.py:45** - Implement OpenAI API client initialization (✅ DONE - line 49)
+- [x] **luffy/deepscaler/utils.py:46** - Add proper authentication handling (✅ DONE - line 49)
+- [x] **luffy/deepscaler/utils.py:47** - Implement exponential backoff retry logic for rate limits (✅ DONE - lines 66-70)
+- [x] **luffy/deepscaler/utils.py:48** - Add comprehensive error handling for different API errors (✅ DONE - lines 65-72)
+- [x] **luffy/deepscaler/utils.py:49** - Implement response parsing and validation (✅ DONE - lines 74-76)
+
+#### ⏳ Remaining OpenAI API Items:
+- [ ] **luffy/deepscaler/utils.py:45** - Add logging for API calls and errors
+- [ ] **luffy/deepscaler/utils.py:46** - Support batch processing for multiple prompts
+- [ ] **luffy/deepscaler/utils.py:47** - Add timeout configuration for API calls
+
+#### ⏳ Gemini API Items (full integration needed):
+- [ ] **luffy/deepscaler/utils.py:107** - Implement Vertex AI initialization and authentication
+- [ ] **luffy/deepscaler/utils.py:108** - Configure safety settings for content generation
+- [ ] **luffy/deepscaler/utils.py:109** - Set up GenerativeModel with proper system instructions
+- [ ] **luffy/deepscaler/utils.py:110** - Implement retry logic with exponential backoff
+- [ ] **luffy/deepscaler/utils.py:111** - Add comprehensive error handling for API access issues
+- [ ] **luffy/deepscaler/utils.py:112** - Handle rate limiting and quota management
+- [ ] **luffy/deepscaler/utils.py:113** - Implement response validation and text extraction
+- [ ] **luffy/deepscaler/utils.py:114** - Add support for different generation configurations
 - [ ] **luffy/test.py:1590** - add smaller page sizes when https://github.com/Dao-AILab/flash-attention/pull/824 is merged
 - [ ] **luffy/verl/examples/split_placement/split_monkey_patch.py:141** - make a canonical logger that supports various backend
 - [ ] **luffy/verl/tests/e2e/check_results.py:21** - this function needs error handling
